@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CodeCrown Contest Portal</title>
+  
+  <!-- ============================================================ -->
+  <!-- TECH TEAM: CHANGE THE TARGET URL BELOW FOR EACH NEW ROUND   -->
+  <!-- ============================================================ -->
+  <meta http-equiv="refresh" content="2; url=https://www.hackerrank.com/codecrown-round-1">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d1117;
+      color: #f0f6fc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 440px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    .spinner {
+      border: 4px solid #21262d;
+      border-top: 4px solid #2ea043;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 24px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 22px;
+      color: #ffffff;
+    }
+    p {
+      color: #8b949e;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+    }
+    .manual-link {
+      display: inline-block;
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .manual-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="spinner"></div>
+    <h2>Connecting to CodeCrown...</h2>
+    <p>Safe Exam Browser is routing you to the active competition round on HackerRank.</p>
+    <a class="manual-link" href="https://www.hackerrank.com/codecrown-round-1">Click here if not redirected in 3 seconds</a>
+  </div>
+
+  <script>
+    // Fallback script if meta refresh is delayed by browser profile
+    setTimeout(() => {
+      window.location.href = "https://www.hackerrank.com/codecrown-round-1";
+    }, 2000);
+  </script>
+
+</body>
+</html>
